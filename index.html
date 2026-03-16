@@ -12,22 +12,25 @@
 
         function teamRank(){
             var rank = "1st";
-            switch(rank){
-                case "1st":
-                    alert("Champions!")
+
+            message = "";
+            
+            switch(true){
+                case (rank === "1st"):
+                    message = ("Champions!")
                     break;
-                case "2nd":
-                    alert("1st Runner Ups!")
+                case (rank === "2nd"):
+                    message = ("1st Runner Ups!")
                     break;
-                case "3rd":
-                    alert("2nd Runner Ups!")
+                case (rank === "3rd"): 
+                    message = ("2nd Runner Ups!")
                     break;
-                case "4th":
-                    alert("3rd Runner Ups!")
+                case (rank === "4th"):
+                    message = ("3rd Runner Ups!")
                     break; 
-            default:
-                alert("Rank could not be determined.")
+            message = "Rank could not be determined";
             }
+            alert(message);
         }
         let team  = "Bulldogs"; //string
         switch(team){
